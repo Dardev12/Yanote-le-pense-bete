@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph_yanote"
+    app:startDestination="@id/homeFrag">
+
+    <fragment
+        android:id="@+id/homeFrag"
+        android:name="com.dardev.yanote.fragments.HomeFrag"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFrag_to_nouvelleYanoteFrag"
+            app:destination="@id/nouvelleYanoteFrag"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+
+            />
+        <action
+            android:id="@+id/action_homeFrag_to_updateYanoteFrag"
+            app:destination="@id/updateYanoteFrag" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/nouvelleYanoteFrag"
+        android:name="com.dardev.yanote.fragments.NouvelleYanoteFrag"
+        android:label="New yanote"
+        tools:layout="@layout/fragment_nouvelle_yanote" >
+        <action
+            android:id="@+id/action_nouvelleYanoteFrag_to_homeFrag"
+            app:destination="@id/homeFrag"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/updateYanoteFrag"
+        android:name="com.dardev.yanote.fragments.UpdateYanoteFrag"
+        android:label="Update yanote"
+        tools:layout="@layout/fragment_update_yanote" >
+        <action
+            android:id="@+id/action_updateYanoteFrag_to_homeFrag"
+            app:destination="@id/homeFrag"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+</navigation>
