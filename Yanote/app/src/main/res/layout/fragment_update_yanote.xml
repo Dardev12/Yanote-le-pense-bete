@@ -25,34 +25,39 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="16dp"
+                android:background="@color/colorAccent"
+                >
 
                 <EditText
                     android:id="@+id/yaNoteTitreUpdate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
+                    android:background="@color/white"
                     android:ems="10"
                     android:hint="Titre"
                     android:inputType="text"
                     android:textColor="@color/black"
                     android:textColorHint="@color/black"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+
+                    />
 
                 <EditText
                     android:id="@+id/yaNoteContenuUpdate"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="20dp"
-                    android:background="@android:color/transparent"
+                    android:background="@color/white"
                     android:ems="10"
                     android:gravity="start|top"
                     android:hint="Ya noté..."
                     android:inputType="textMultiLine"
                     android:textColor="@color/black"
                     android:textColorHint="@color/hintColor"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
@@ -66,9 +71,11 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="32dp"
         android:clickable="true"
+        android:backgroundTint="@color/colorAccent"
         android:tintMode="@color/colorPrimary"
         app:borderWidth="0dp"
         android:src="@android:drawable/checkbox_on_background"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="TODO" />
 </androidx.constraintlayout.widget.ConstraintLayout>

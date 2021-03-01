@@ -11,7 +11,8 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -24,24 +25,26 @@
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="16dp"
+                android:background="@color/colorAccent">
                 <EditText
                     android:id="@+id/yaNoteTitre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
+                    android:background="@color/background_white"
                     android:ems="10"
                     android:hint="Titre"
                     android:inputType="text"
                     android:textColor="@color/black"
                     android:textColorHint="@color/black"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    />
                 <EditText
                     android:id="@+id/yaNoteContenu"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@android:color/transparent"
+                    android:background="@color/background_white"
                     android:gravity="start|top"
                     android:ems="10"
                     android:layout_marginTop="20dp"
@@ -49,7 +52,8 @@
                     android:inputType="textMultiLine"
                     android:textColor="@color/black"
                     android:textColorHint="@color/hintColor"
-                    android:textSize="16sp"/>
+                    android:textSize="16sp"
+                    />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
